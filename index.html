@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		sc.kitiran.me
+	</title>
+
+	<style>
+	* { font-family: verdana; font-size: 10pt; COLOR: gray; }
+	b { font-weight: bold; }
+	table { height: 50%; border: 1px solid gray;}
+	td { text-align: center; padding: 25;}
+	</style>
+</head>
+
+<body>
+<center>
+<br>	
+	<tr><td><b>sc.kitiran.me</b></td></tr>
+<br><br>
+	<input type="text" id="currentDateTime">
+	<script>
+  		var today = new Date();
+		var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		var dateTime = date+' '+time;
+  		document.getElementById("currentDateTime").value = dateTime;
+	</script>	
+</center>
+</body>
+</html>
